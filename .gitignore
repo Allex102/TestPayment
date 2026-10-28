@@ -1,0 +1,12 @@
+gitignore
+
+.venv/
+
+.idea/
+
+__pycache__/
+*.pyc
+*.pyo
+.gigacode/
+.env
+

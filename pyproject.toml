@@ -1,0 +1,30 @@
+[project]
+name = "testpayment"
+version = "0.1.0"
+description = "Test payment tz"
+readme = "REAMDE.MD"
+requires-python = ">=3.14"
+dependencies = [
+    "aio-pika>=10.2.1",
+    "alembic>=1.20.1",
+    "asyncpg>=0.32.0",
+    "fastapi>=0.162.0",
+    "greenlet>=3.5.6",
+    "httpx>=0.28.1",
+    "pydantic>=2.14.1",
+    "pydantic-settings>=2.16.1",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "ruff>=0.17.3",
+    "sqlalchemy>=2.1.6",
+    "uvicorn>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest-asyncio>=1.4.1",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
